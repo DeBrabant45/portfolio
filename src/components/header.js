@@ -1,8 +1,9 @@
-import { Link } from 'gatsby'
 import React from 'react'
-import Logo from './Logo'
+import Contact from './Contact'
 import NavList from './nav'
 import styled from "styled-components"
+
+import Logo from './Logo'
 
 const ColorContainer = styled.div`
   background: ${props => props.inputColor || "rebeccapurple"};
@@ -20,27 +21,13 @@ const Navigation = styled.nav`
   justify-content: space-between;
   flex-direction: row;
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled.button`
   margin-top: auto; 
   margin-bottom: auto; 
   padding: 30px; 
-  text-decoration: none; 
-`
-
-const ContactDiv = styled.div`
-  color: black; 
-  letter-spacing: .1em;
-  font-size: 14px; 
-  font-varian-caps: small-caps; 
-  font-weight: bolder;
-
-  &:hover {
-    color: gray;
-  }
-
-  @media (max-width: 700px) {
-    display: none;
-  } 
+  text-decoration: none;
+  background:none;
+  border:none; 
 `
 
 const Header = (props) => (
@@ -48,12 +35,8 @@ const Header = (props) => (
     <Navigation>
       <Logo />
       <NavList />
-      <StyledLink 
-        to='/' 
-      >
-        <ContactDiv>
-          Contact
-        </ContactDiv>
+      <StyledLink>
+        <Contact />
       </StyledLink>
     </Navigation>
   </ColorContainer>
