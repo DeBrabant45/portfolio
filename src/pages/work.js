@@ -6,7 +6,7 @@ import Image from '../components/image'
 import SEO from '../components/seo'
 
 const Work = () => (
-  <Layout>
+  <Layout pageColor='royalblue'>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <h1>Page Work</h1>
     <p>Welcome to your new Gatsby site.</p>

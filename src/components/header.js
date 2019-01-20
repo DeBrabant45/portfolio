@@ -1,17 +1,12 @@
 import React from 'react'
-import Contact from './Contact'
-import NavList from './nav'
+import Contact from './contact'
+import NavBar from './navBar'
 import styled from "styled-components"
 
-import Logo from './Logo'
+import Logo from './logo'
 
 const ColorContainer = styled.div`
-  background: ${props => props.inputColor || "rebeccapurple"};
-  
-  &.sampleOfClassName {
-    background: orange;
-  }
-  padding-bottom: 1.45rem; 
+  padding-bottom: 1.45rem;
 `
 
 const Navigation = styled.nav`
@@ -21,23 +16,13 @@ const Navigation = styled.nav`
   justify-content: space-between;
   flex-direction: row;
 `
-const StyledLink = styled.button`
-  margin-top: auto; 
-  margin-bottom: auto; 
-  padding: 30px; 
-  text-decoration: none;
-  background:none;
-  border:none; 
-`
 
 const Header = (props) => (
-  <ColorContainer inputColor={props.headcolor}>
+  <ColorContainer>
     <Navigation>
       <Logo />
-      <NavList />
-      <StyledLink>
-        <Contact />
-      </StyledLink>
+      <NavBar />
+      <Contact />
     </Navigation>
   </ColorContainer>
 )

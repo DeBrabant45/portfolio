@@ -15,6 +15,19 @@ const customStyles = {
   }
 };
 
+const ContainerDiv = styled.div`
+  margin-top: auto; 
+  margin-bottom: auto; 
+  padding: 30px; 
+  text-decoration: none;
+  background:none;
+  border:none;
+  
+  @media (max-width: 700px) {
+    display: none;
+  } 
+`
+
 const ContactDiv = styled.div`
   color: black; 
   letter-spacing: .1em;
@@ -25,10 +38,6 @@ const ContactDiv = styled.div`
   &:hover {
     color: gray;
   }
-
-  @media (max-width: 700px) {
-    display: none;
-  } 
 `
 const ExitButton = styled.button`
   float: right;
@@ -42,7 +51,7 @@ const Greeting = styled.h3`
     margin-top: 100px;
     text-align: center;
 ` 
-const Email = styled.div`
+const InfoDiv = styled.div`
     font-size: xx-large;
     text-align: center;
 `
@@ -77,22 +86,25 @@ export default class Contact extends React.Component {
  
   render() {
     return (
-      <div>
+      <ContainerDiv>
         <ContactDiv onClick={this.openModal}>Contact</ContactDiv>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
+          contentLabel="Contact Modal"
         >
             <ExitButton onClick={this.closeModal}>&times;</ExitButton>
             <Greeting ref={subtitle => this.subtitle = subtitle}>
                 Contact me!
             </Greeting>
-            <Email>DeBrabant21@gmail.com</Email>
+            <InfoDiv>
+              <p>DeBrabant21@gmail.com</p>
+              <p>248-795-8586</p>
+            </InfoDiv>
         </Modal>
-      </div>
+      </ContainerDiv>
     );
   }
 }
