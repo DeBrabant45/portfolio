@@ -45,14 +45,19 @@ class Navbar extends React.Component {
     }
 
     render() {
+        const showMenu = this.state.showMenu;
+        let navigation;
+        if (showMenu) {
+            navigation = <NavLink>
+                            <HamburgerClose onClick={this._showMenu.bind(null, false)}>&times;</HamburgerClose>
+                         </NavLink>
+        } else {
+            navigation = <NavLink show='none'/>
+        }
       return (
         <ContainerDiv>
           <HamburgerButton onClick={this._showMenu.bind(null, true)}>&equiv;</HamburgerButton>
-            { this.state.showMenu && 
-            <NavLink>
-                <HamburgerClose onClick={this._showMenu.bind(null, false)}>&times;</HamburgerClose>
-            </NavLink> }
-         <NavLink show='none'/> {/* Passing props for mobile so element doesn't display*/} 
+          {navigation}
         </ContainerDiv>
       )
     }
