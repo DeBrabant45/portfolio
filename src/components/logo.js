@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import LogoImg from '../images/logo.png'
+import LogoImg from '../images/Logo.png'
 import styled from "styled-components"
 
 const MainLogo = styled.img`
