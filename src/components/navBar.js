@@ -50,7 +50,7 @@ class Navbar extends React.Component {
         if (showMenu) {
             navigation = <NavLink>
                             <HamburgerClose onClick={this._showMenu.bind(null, false)}>&times;</HamburgerClose>
-                         </NavLink>
+                        </NavLink>
         } else {
             navigation = <NavLink show='none'/>
         }
