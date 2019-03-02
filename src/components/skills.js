@@ -21,7 +21,7 @@ const SkillsDiv = styled.div`
 const SkillsSpan = styled.span`
       margin: auto;
       border-radius: 5px;
-      margin-top: -4rem;
+      margin-top: -2.5rem;
       background: orange;
       display: flex;
       box-shadow: 2px 3px 10px 3px rgba(1, 12, 16, 0.5);
@@ -29,8 +29,8 @@ const SkillsSpan = styled.span`
 `
 
 const Column = styled.div`
-    border-bottom: 0px solid #E6ECF8;
-    border-right: 1px solid #E6ECF8;
+    border-bottom: 0px solid black;
+    border-right: 1px solid black;
     padding: 60px 35px;
     display: block;
     flex-basis: 0;
@@ -38,6 +38,9 @@ const Column = styled.div`
     flex-shrink: 1;
     max-width: 280px;
     border-radius: 5px;
+    &:last-child {
+        border-right: none;
+    }
 `
 
 const Headline = styled.h1`
@@ -62,16 +65,16 @@ class IndexPage extends React.Component {
                 </Column>
                 <Column>
                     <Headline>Languages I speak:</Headline>
-                    <p>HTML,</p>
-                    <p>CSS,</p>
-                    <p>Javascript,</p> 
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p> 
                     <p>C#</p>
                 </Column>
                 <Column>
                     <Headline>Frameworks I use:</Headline>
-                    <p>React.js,</p>
-                    <p>Gatsby.js,</p>
-                    <p>.Net,</p> 
+                    <p>React.js</p>
+                    <p>Gatsby.js</p>
+                    <p>.Net</p> 
                     <p>Unity</p>
                 </Column>
             </SkillsSpan>

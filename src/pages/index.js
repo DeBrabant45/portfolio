@@ -9,6 +9,7 @@ import LogoBanner from '../components/logobanner'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Skills from '../components/skills'
+import Recent from '../components/recent'
 
 const JobTitleDiv = styled.div`
     display: flex;
@@ -27,6 +28,10 @@ const JobTitleSpan = styled.span`
       margin: auto;
       padding: 0;
       margin-bottom: 0px;
+`
+
+const HeaderFour = styled.h4`
+      margin: 0;
 `
 
 const IntroDiv = styled.div `
@@ -49,12 +54,13 @@ class IndexPage extends React.Component {
   componentDidMount() {
     AOS.init({
       duration: 2000,
+      mirror: true,
     })
   }
   render() {
     return (
       <Layout pageColor='orange'>
-        <div data-aos="fade-down">
+        <div data-aos="fade-down" data-aos-mirror="true">
           <LogoBanner />
         </div>
         <div data-aos="fade-up">
@@ -62,18 +68,25 @@ class IndexPage extends React.Component {
         </div>
         <JobTitleDiv data-aos="fade-down">
           <JobTitleSpan>
-            <h4>Driven and Determined</h4>
+            <HeaderFour>Driven and Determined</HeaderFour>
             <h1>Front-End Devloper</h1>
-            <h4>Unity developer hobbyist</h4>
+            <HeaderFour>Unity developer hobbyist</HeaderFour>
           </JobTitleSpan>
         </JobTitleDiv>
         <IntroDiv>
           <IntroSpan data-aos="fade-up">
             <h1>Hello, I'm Aaron. Nice to Meet you!</h1>
-            <p>Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually improving my chops.</p>
+            <p>
+              Since beginning my journey as a software developer, 
+              I've worked as a freelancer, developed for a startup, 
+              and collaborated with talented people to create skills 
+              that I put to use with business demands. I'm confident, 
+              ambitious, and absolutely love what I do.
+              </p>
           </IntroSpan>
         </IntroDiv>
         <Skills />
+        <Recent />
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         <Link to="/page-2/">Go to page 2</Link>
     </Layout>
