@@ -40,7 +40,7 @@ const IntroDiv = styled.div `
       justify-content: center;
       margin-top: 80px;
       text-align: center;
-      background: white;
+      background: lightgray;
       padding: 100px;
 `
 
@@ -60,16 +60,12 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout pageColor='orange'>
-        <div data-aos="fade-down" data-aos-mirror="true">
-          <LogoBanner />
-        </div>
-        <div data-aos="fade-up">
-          <Banner />
-        </div>
+        <LogoBanner />
+        <Banner />
         <JobTitleDiv data-aos="fade-down">
           <JobTitleSpan>
             <HeaderFour>Driven and Determined</HeaderFour>
-            <h1>Front-End Devloper</h1>
+            <h1>Front-End Developer</h1>
             <HeaderFour>Unity developer hobbyist</HeaderFour>
           </JobTitleSpan>
         </JobTitleDiv>
@@ -87,8 +83,6 @@ class IndexPage extends React.Component {
         </IntroDiv>
         <Skills />
         <Recent />
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <Link to="/page-2/">Go to page 2</Link>
     </Layout>
     )
   }
