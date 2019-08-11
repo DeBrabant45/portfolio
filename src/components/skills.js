@@ -25,6 +25,10 @@ const SkillsSpan = styled.span`
       background: orange;
       display: flex;
       box-shadow: 2px 3px 10px 3px rgba(1, 12, 16, 0.5);
+
+      @media (max-width: 700px) {
+        display: inline-block;
+      }
       
 `
 
@@ -41,6 +45,11 @@ const Column = styled.div`
     &:last-child {
         border-right: none;
     }
+
+    @media (max-width: 700px) {
+        border: none;
+        max-width: 300px;
+      }
 `
 
 const Headline = styled.h1`

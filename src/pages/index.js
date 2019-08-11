@@ -42,12 +42,18 @@ const IntroDiv = styled.div `
       text-align: center;
       background: lightgray;
       padding: 100px;
+
+      @media (max-width: 700px) {
+        padding: 30px;
+      } 
 `
 
 const IntroSpan = styled.span`
       width: 60%;
       margin: auto;
       border-radius: 5px;
+
+      h1
 `
 
 class IndexPage extends React.Component {
@@ -69,7 +75,7 @@ class IndexPage extends React.Component {
             <HeaderFour>Unity developer hobbyist</HeaderFour>
           </JobTitleSpan>
         </JobTitleDiv>
-        <IntroDiv>
+        <IntroDiv id="MyInfo">
           <IntroSpan data-aos="fade-up">
             <h1>Hello, I'm Aaron. Nice to Meet you!</h1>
             <p>

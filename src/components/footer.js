@@ -20,6 +20,10 @@ const HandImage = styled.img`
     max-width: 400px;
     margin: auto;
     margin-bottom: -50px;
+
+    @media (max-width: 700px) {
+        max-width: 200px;
+      }
 `
 
 const BottomDiv = styled.div`
@@ -33,7 +37,7 @@ const Footer = (props) => (
         <ColorContainer>
             <Logo />
             <FlexDiv>
-                <span data-aos="fade-up" data-aos-delay="500" data-aos-duration="10000" >
+                <span>
                     <HandImage src={Hand} />
                 </span>
             </FlexDiv>

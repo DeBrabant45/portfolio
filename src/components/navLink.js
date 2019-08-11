@@ -63,18 +63,18 @@ const NavList = (props) => (
             </StyledLink>
         </ListItem>
         <ListItem>
-            <StyledLink to={'/who/'} activeStyle={{borderBottom: 'solid 1px black'}}>
-                Who
+            <StyledLink to={'/#MyInfo'} activeStyle={{borderBottom: 'solid 1px black'}}>
+                My Info
             </StyledLink>
         </ListItem>
         <ListItem>
-            <StyledLink to={'/what/'} activeStyle={{borderBottom: 'solid 1px black'}}>
-                What
+            <StyledLink to={'/#Recent'} activeStyle={{borderBottom: 'solid 1px black'}}>
+                Recent Work
             </StyledLink>
         </ListItem>
         <ListItem>
-            <StyledLink to={'/work/'} activeStyle={{borderBottom: 'solid 1px black'}}>
-                Work
+            <StyledLink to={'/'} activeStyle={{borderBottom: 'solid 1px black'}}>
+                Resume
             </StyledLink>
         </ListItem>
     </UnorderedList>

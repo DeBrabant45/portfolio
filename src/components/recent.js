@@ -39,7 +39,7 @@ const PLText = styled.h4`
 `
 
 const Recent = (props) => (
-  <ContainerDiv>
+  <ContainerDiv id="Recent">
     <ContainerSpan>
       <img src={FullyTapped} />
     </ContainerSpan>
