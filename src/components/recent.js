@@ -2,9 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import Hover from './hover.js'
 
-import Computer from '../images/Computer.png'
-import FullyTapped from '../images/logo2.png'
-import FullyTapped2 from '../images/FullyTapped.jpg'
+import FullyTapped from '../images/FullyTapped.JPG'
 
 
 const HeaderDiv = styled.div`
@@ -41,13 +39,13 @@ const Recent = (props) => (
     <ContainerDiv>
       <div>
         <Heading>Front-End</Heading>
-        <Hover image={FullyTapped2} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
-        <Hover image={FullyTapped2} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
+        <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
+        <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
       </div>
       <div>
         <Heading>Unity</Heading>
-        <Hover image={FullyTapped2} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
-        <Hover image={FullyTapped2} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
+        <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
+        <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
       </div>
     </ContainerDiv>
   </div>
