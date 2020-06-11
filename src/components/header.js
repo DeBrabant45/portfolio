@@ -7,6 +7,7 @@ import Logo from './logo'
 
 const ColorContainer = styled.div`
   padding-bottom: 1.45rem;
+  background:#7510F7;
 `
 
 const Navigation = styled.nav`

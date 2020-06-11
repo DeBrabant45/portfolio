@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from "styled-components"
-import AOS from "aos"
-import "aos/dist/aos.css"
 
 import Logo from './logobanner'
 import Hand from '../images/hand3.png'
+import Github from '../components/githubimg'
 
 const ColorContainer = styled.div`
     background: lightgray;
@@ -27,7 +26,7 @@ const HandImage = styled.img`
 `
 
 const BottomDiv = styled.div`
-    background: white;
+    background: #7510F7;
     display: flex;
     justify-content: space-evenly;
 `
@@ -44,7 +43,12 @@ const Footer = (props) => (
         </ColorContainer>
         <BottomDiv>
             <span>Located in Waterford MI</span>
-            <span>GITHUB, LINKED, GMAIL</span>
+            <span>
+                <Github />
+                LINKED, 
+                GMAIL
+            </span>
+            <Github/> 
         </BottomDiv>
     </>
 )

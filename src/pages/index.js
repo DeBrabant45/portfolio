@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from "styled-components"
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -7,7 +6,7 @@ import "aos/dist/aos.css"
 import Banner from '../components/banner'
 import LogoBanner from '../components/logobanner'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+//import SEO from '../components/seo'
 import Skills from '../components/skills'
 import Recent from '../components/recent'
 
@@ -40,8 +39,8 @@ const IntroDiv = styled.div `
       justify-content: center;
       margin-top: 80px;
       text-align: center;
-      background: lightgray;
       padding: 100px;
+      background:#7510F7;
 
       @media (max-width: 700px) {
         padding: 30px;
@@ -65,7 +64,7 @@ class IndexPage extends React.Component {
   }
   render() {
     return (
-      <Layout pageColor='orange'>
+      <Layout pageColor='lightgray'>
         <LogoBanner />
         <Banner />
         <JobTitleDiv data-aos="fade-down">

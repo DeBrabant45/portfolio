@@ -5,7 +5,6 @@ import Designer from './designer'
 import RBubble from '../images/bubbleright.png'
 import LBubble from '../images/bubbleleft.png'
 
-
 const BubbleContainer = styled.div`
     display: flex;
     justify-content: center;

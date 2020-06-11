@@ -4,13 +4,6 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 
 
-import HtmlImg from '../components/htmlimg'
-import CSharpImg from '../components/csharpimg'
-import JsImg from '../components/jsimg'
-import CssImg from '../components/cssimg'
-
-
-
 const SkillsDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,8 +14,9 @@ const SkillsDiv = styled.div`
 const SkillsSpan = styled.span`
       margin: auto;
       border-radius: 5px;
-      margin-top: -2.5rem;
-      background: orange;
+      margin-top: -1.5rem;
+      margin-bottom: -1.5rem;
+      background: lightgray;
       display: flex;
       box-shadow: 2px 3px 10px 3px rgba(1, 12, 16, 0.5);
 
@@ -70,10 +64,10 @@ class IndexPage extends React.Component {
             <SkillsSpan>
                 <Column>
                     <Headline>My Skills:</Headline>
-                    <p>I tend to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    <p>I tend to code things from scratch, and enjoy bringing ideas to life in the browser. Making responsive web designed pages is something I take pride in. </p>
                 </Column>
                 <Column>
-                    <Headline>Languages I speak:</Headline>
+                    <Headline>Languages I use:</Headline>
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>Javascript</p> 
