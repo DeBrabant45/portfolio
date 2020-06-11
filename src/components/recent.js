@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import Hover from './hover.js'
 
-import FullyTapped from '../images/FullyTapped.JPG'
+import FullyTapped from '../images/FullyTapped.png'
 
 
 const HeaderDiv = styled.div`
