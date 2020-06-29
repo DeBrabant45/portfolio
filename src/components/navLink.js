@@ -72,11 +72,6 @@ const NavList = (props) => (
                 Recent Work
             </StyledLink>
         </ListItem>
-        <ListItem>
-            <StyledLink to={'/'} activeStyle={{borderBottom: 'solid 1px black'}}>
-                Resume
-            </StyledLink>
-        </ListItem>
     </UnorderedList>
     )
 

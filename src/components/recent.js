@@ -15,7 +15,7 @@ const HeaderDiv = styled.div`
 const ContainerDiv = styled.div`
       display: flex;
       justify-content: space-evenly;
-      padding-top: 50px;
+      padding: 50px;
       background: #7510F7;
 `
 
@@ -31,7 +31,7 @@ const Heading = styled.h1`
 `
 
 const Recent = (props) => (
-  <div>
+  <div id="Recent">
       <HeaderDiv>
         <Heading>Recent </Heading>
         <Heading>Projects</Heading>
@@ -40,11 +40,9 @@ const Recent = (props) => (
       <div>
         <Heading>Front-End</Heading>
         <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
-        <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
       </div>
       <div>
         <Heading>Unity</Heading>
-        <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
         <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
       </div>
     </ContainerDiv>

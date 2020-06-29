@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import Logo from '../images/Text01.png'
+import Logo from '../images/LogoBannerGray.png'
 
 
 const LogoSpan = styled.span`
