@@ -13,10 +13,16 @@ background-size: contain;
 height: 250px;
 width: 100%;
 
+@media (max-width: 1024px) {
+    height: 150px;
+  }
+
+@media (max-width: 768px) {
+    height: 145px;
+  }
 
 @media (max-width: 700px) {
-    background-position: top;
-    height: 80px;
+    height: 100px;
   } 
 `
 

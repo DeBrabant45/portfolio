@@ -32,6 +32,11 @@ const SpeechRight = styled.img`
         }
     }
 
+    @media (max-width: 1024px) {
+        max-width: 250px;
+        max-height: 150px;
+      } 
+
     @media (max-width: 700px) {
         max-width: 200px;
         max-height: 100px;
@@ -58,6 +63,11 @@ const SpeechLeft = styled.img`
             opacity: 0;
         }
     }
+
+    @media (max-width: 1024px) {
+        max-width: 250px;
+        max-height: 150px;
+      } 
 
     @media (max-width: 700px) {
         max-width: 200px;
