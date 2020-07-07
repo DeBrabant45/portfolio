@@ -47,7 +47,8 @@ const SpeechLeft = styled.img`
     margin: 0px;
     opacity: 0;
     animation: opacityOn 10s normal forwards;
-    animation-delay: 12s;  
+    animation-delay: 12s;
+    visibility: hidden;
 
     @keyframes opacityOn {
         0% {

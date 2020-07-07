@@ -4,12 +4,15 @@ import Hover from './hover.js'
 
 import FullyTapped from '../images/FullyTapped.png'
 
+const ColoredContainerDiv = styled.div`
+    background: #7510F7;
+`
 
 const HeaderDiv = styled.div`
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    background: #7510F7;
+
 `
 
 const ContainerDiv = styled.div`
@@ -31,7 +34,7 @@ const Heading = styled.h1`
 `
 
 const Recent = (props) => (
-  <div id="Recent">
+  <ColoredContainerDiv id="Recent">
       <HeaderDiv>
         <Heading>Recent </Heading>
         <Heading>Projects</Heading>
@@ -46,7 +49,7 @@ const Recent = (props) => (
         <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
       </div>
     </ContainerDiv>
-  </div>
+  </ColoredContainerDiv>
 )
 
 
