@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Hover from './hover.js'
 
 import FullyTapped from '../images/FullyTapped.png'
+import CityBuilder from '../images/CityBuilder.png'
 
 const ColoredContainerDiv = styled.div`
     background: #7510F7;
@@ -46,7 +47,7 @@ const Recent = (props) => (
       </div>
       <div>
         <Heading>Unity</Heading>
-        <Hover image={FullyTapped} desc="Fully Tapped Fitness, transforming fitness goals one cilent at a time" codelink="https://github.com/DeBrabant45/FullyTappedFitness" weblink="https://www.fullytappedfitness.com/"/>
+        <Hover image={CityBuilder} desc="A city builder game that I'm still creating" codelink="https://github.com/DeBrabant45/Unity3d-City-Builder"/>
       </div>
     </ContainerDiv>
   </ColoredContainerDiv>
