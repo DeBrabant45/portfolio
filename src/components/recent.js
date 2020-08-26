@@ -47,7 +47,7 @@ const Recent = (props) => (
       </div>
       <div>
         <Heading>Unity</Heading>
-        <Hover image={CityBuilder} desc="A city builder game that I'm still creating" codelink="https://github.com/DeBrabant45/Unity3d-City-Builder"/>
+        
       </div>
     </ContainerDiv>
   </ColoredContainerDiv>
