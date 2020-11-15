@@ -2,21 +2,38 @@ import React from "react";
 import { Link } from 'gatsby'
 import styled from "styled-components"
 
+const MainDiv = styled.div`
+    margin: auto;
+    
+    @media (max-width: 500px) {
+        display: ${props => props.show || "flex"};
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        background: rgba(64,64,64,.93);
+        overflow: scroll;
+    }
+`
+
 const UnorderedList = styled.ul`
     margin: auto;
 
     @media (max-width: 500px) {
-        display: ${props => props.show || "flex"};
-        background: black;
-        position: fixed;
+        list-style-type: none;
+        background: rgba(0,0,0,.85);
+        margin: 20px;
+        border-radius: 5px;
         height: 100%;
-        width: 100%;
-        opacity: .8;
-        flex-direction: column;
-        justify-content: flex-start;
-        left: 0;
-        top: 0;
-        z-index: 100;
+        display: inline-block;
+        width: 90%;
       } 
 `
 
@@ -50,12 +67,25 @@ const StyledLink = styled(Link)`
     }
 
     @media (max-width: 500px) {
-        color: white;
+        color: orange;
+        padding: 8px;
+        background-color: #4a4a4a;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: .3s;
+        border-radius: 5px;
+        max-width: 200px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
       } 
 `
 
 const NavList = (props) => (
-    <UnorderedList show={props.show}>
+    <MainDiv show={props.show}>
+    <UnorderedList>
         {props.children}
         <ListItem>
             <StyledLink to={'/'} activeStyle={{borderBottom: 'solid 1px black'}} >
@@ -73,6 +103,7 @@ const NavList = (props) => (
             </StyledLink>
         </ListItem>
     </UnorderedList>
+    </MainDiv>
     )
 
 export default NavList

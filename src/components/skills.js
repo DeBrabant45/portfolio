@@ -42,7 +42,7 @@ const Column = styled.div`
 
     @media (max-width: 700px) {
         border: none;
-        max-width: 300px;
+        max-width: 350px;
       }
 `
 

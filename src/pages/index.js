@@ -57,6 +57,10 @@ const IntroSpan = styled.span`
       width: 60%;
       margin: auto;
       border-radius: 5px;
+
+      @media (max-width: 768px) {
+        width: auto;
+      } 
 `
 
 class IndexPage extends React.Component {

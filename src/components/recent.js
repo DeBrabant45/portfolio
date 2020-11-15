@@ -4,6 +4,7 @@ import Hover from './hover.js'
 
 import FullyTapped from '../images/FullyTapped.png'
 import CityBuilder from '../images/CityBuilder.png'
+import Computer from '../images/Computer.png'
 
 const ColoredContainerDiv = styled.div`
     background: #7510F7;
@@ -21,17 +22,23 @@ const ContainerDiv = styled.div`
       justify-content: space-evenly;
       padding: 50px;
       background: #7510F7;
-`
 
-const ContainerSpan = styled.span`
-      margin: auto;
-      display: block;
+      @media (max-width: 768px) {
+        display: block;
+        padding: 10px;
+      } 
 `
 
 const Heading = styled.h1`
       text-align: center;
       padding: 0;
       margin: 0;
+`
+const PCLogo = styled.img`
+    text-align: center;
+    padding-bottom: 10px;
+    margin: auto;
+    display: block;
 `
 
 const Recent = (props) => (
@@ -47,9 +54,10 @@ const Recent = (props) => (
       </div>
       <div>
         <Heading>Unity</Heading>
-        <Hover image={CityBuilder} desc="A city building game that I'm still creating" codelink="https://github.com/DeBrabant45/Unity3d-City-Builder"/>
+        <Hover image={CityBuilder} desc="My first fully completed game" codelink="https://github.com/DeBrabant45/Unity3d-City-Builder" weblink="https://debrabant45.github.io/Unity3d-City-Builder/"/>
       </div>
     </ContainerDiv>
+    <PCLogo src={Computer} alt="Computer screen with logos"/>
   </ColoredContainerDiv>
 )
 
