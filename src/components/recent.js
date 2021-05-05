@@ -4,6 +4,7 @@ import Hover from './hover.js'
 
 import FullyTapped from '../images/FullyTapped.png'
 import CityBuilder from '../images/CityBuilder.png'
+import JollyRoger from '../images/JollyRoger.jpg'
 import Computer from '../images/Computer.png'
 
 const ColoredContainerDiv = styled.div`
@@ -55,6 +56,7 @@ const Recent = (props) => (
       <div>
         <Heading>Unity</Heading>
         <Hover image={CityBuilder} desc="My first fully completed game" codelink="https://github.com/DeBrabant45/Unity3d-City-Builder" weblink="https://debrabant45.github.io/Unity3d-City-Builder/"/>
+        <Hover image={JollyRoger} desc="My Next 3D Survival project still in development" codelink="https://github.com/DeBrabant45/Unity3d-Survival"/>
       </div>
     </ContainerDiv>
     <PCLogo src={Computer} alt="Computer screen with logos"/>
