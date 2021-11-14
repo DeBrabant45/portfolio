@@ -5,7 +5,7 @@ import Hover from './hover.js'
 import FullyTapped from '../images/FullyTapped.png'
 import CityBuilder from '../images/CityBuilder.png'
 import JollyRoger from '../images/JollyRoger.jpg'
-import Dojo from '../images/Dojo-Promo.png'
+import Dojo from '../images/DojoPromo.png'
 import Computer from '../images/Computer.png'
 
 const ColoredContainerDiv = styled.div`
