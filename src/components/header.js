@@ -7,7 +7,7 @@ import Logo from './logo'
 
 const ColorContainer = styled.div`
   padding-bottom: 1.45rem;
-  background:#7510F7;
+  background:#002D62;
 
   @media (max-width: 768px) {
     padding-bottom: 0px;

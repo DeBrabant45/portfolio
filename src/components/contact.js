@@ -30,11 +30,12 @@ const ContainerDiv = styled.div`
 `
 
 const ContactDiv = styled.div`
-  color: black; 
+  color: silver; 
   letter-spacing: .1em;
   font-size: 14px; 
   font-varian-caps: small-caps; 
   font-weight: bolder;
+  cursor: pointer;
 
   &:hover {
     color: gray;
@@ -45,6 +46,7 @@ const ExitButton = styled.button`
   border-radius: 50%;
   background: white;
   color: black;
+  cursor: pointer;
 `
 const Greeting = styled.h3`
     color: black;

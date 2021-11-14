@@ -63,22 +63,27 @@ class IndexPage extends React.Component {
         <SkillsDiv>
             <SkillsSpan>
                 <Column>
-                    <Headline>My Skills:</Headline>
-                    <p>I tend to code things from scratch, and enjoy bringing ideas to life in the browser. Making responsive web designed pages is something I take pride in. </p>
+                    <Headline>My Skills</Headline>
+                    <p>I tend to program from scratch, and enjoy bringing ideas to life with code. Solving complex problems is something I take pride in. </p>
                 </Column>
                 <Column>
-                    <Headline>Languages I use:</Headline>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Javascript</p> 
+                    <Headline>Languages</Headline>
                     <p>C#</p>
+                    <p>CSS</p>
+                    <p>HTML</p>
+                    <p>Javascript</p> 
                 </Column>
                 <Column>
-                    <Headline>Frameworks I use:</Headline>
+                    <Headline>Frameworks</Headline>
+                    <p>.Net</p>
+                    <p>NUnit</p>
                     <p>React.js</p>
                     <p>Gatsby.js</p>
-                    <p>.Net</p> 
-                    <p>Unity</p>
+                </Column>
+                <Column>
+                  <Headline>Tools/Game Engines</Headline>
+                  <p>Selenium WebDriver</p>
+                  <p>Unity 3D Engine</p>
                 </Column>
             </SkillsSpan>
       </SkillsDiv>

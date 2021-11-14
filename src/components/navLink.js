@@ -52,7 +52,7 @@ const ListItem = styled.li`
 
 const StyledLink = styled(Link)`
     text-decoration: none; 
-    color: black;
+    color: silver;
     letter-spacing: .1em; 
     font-size: 14px; 
     font-variant-caps: small-caps; 
@@ -88,17 +88,17 @@ const NavList = (props) => (
     <UnorderedList>
         {props.children}
         <ListItem>
-            <StyledLink to={'/'} activeStyle={{borderBottom: 'solid 1px black'}} >
+            <StyledLink to={'/'} activeStyle={{borderBottom: 'solid 1px silver'}} >
                 Intro
             </StyledLink>
         </ListItem>
         <ListItem>
-            <StyledLink to={'/#MyInfo'} activeStyle={{borderBottom: 'solid 1px black'}}>
+            <StyledLink to={'/#MyInfo'} activeStyle={{borderBottom: 'solid 1px silver'}}>
                 My Info
             </StyledLink>
         </ListItem>
         <ListItem>
-            <StyledLink to={'/#Recent'} activeStyle={{borderBottom: 'solid 1px black'}}>
+            <StyledLink to={'/#Recent'} activeStyle={{borderBottom: 'solid 1px silver'}}>
                 Recent Work
             </StyledLink>
         </ListItem>

@@ -28,13 +28,14 @@ const HandImage = styled.img`
 `
 
 const BottomDiv = styled.div`
-    background: #7510F7;
+    background: #002D62;
     display: flex;
     justify-content: space-between;
 `
 
 const LocationDiv = styled.div`
       margin: auto;
+      color: silver;
 `
 
 const MediaIconDiv = styled.div`

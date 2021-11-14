@@ -46,7 +46,7 @@ const IntroDiv = styled.div `
       justify-content: center;
       text-align: center;
       padding: 100px;
-      background:#7510F7;
+      background:#002D62;
 
       @media (max-width: 700px) {
         padding: 30px;
@@ -57,6 +57,7 @@ const IntroSpan = styled.span`
       width: 60%;
       margin: auto;
       border-radius: 5px;
+      color: silver;
 
       @media (max-width: 768px) {
         width: auto;
@@ -79,9 +80,9 @@ class IndexPage extends React.Component {
           <JobTitleSpan>
             <HeaderFour>Driven and Determined</HeaderFour>
             <HeaderOne>Software Engineer</HeaderOne>
+            <HeaderFour>QA Automation</HeaderFour>
             <HeaderFour>Unity Developer</HeaderFour>
             <HeaderFour>Front-End Developer</HeaderFour>
-            <HeaderFour>QA Specialist</HeaderFour>
           </JobTitleSpan>
         </JobTitleDiv>
         <IntroDiv id="MyInfo">

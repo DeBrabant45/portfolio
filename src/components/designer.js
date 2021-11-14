@@ -3,7 +3,7 @@ import styled from "styled-components"
 import DesignerImg from '../images/Designer.png'
 
 const DesignerContainer = styled.div`
-    background:#7510F7;
+    background:#002D62;
     padding: 15px;
 `
 const ImgDesigner = styled.img`
